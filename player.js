@@ -31,8 +31,8 @@ export const player = (() => {
     LoadModel_() {
       const loader = new FBXLoader();
       loader.setPath('./resources/Dinosaurs/FBX/');
-      loader.load('Velociraptor.fbx', (fbx) => {
-        fbx.scale.setScalar(0.0025);
+      loader.load('Punk.fbx', (fbx) => {
+        fbx.scale.setScalar(0.0100);
         fbx.quaternion.setFromAxisAngle(
             new THREE.Vector3(0, 1, 0), Math.PI / 2);
 
