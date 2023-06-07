@@ -9,7 +9,6 @@ export const player = (() => {
     constructor(params) {
       this.position_ = new THREE.Vector3(0, 0, 0);
       this.velocity_ = 0.0;
-      this.score_ = 0;
 
       // this.mesh_ = new THREE.Mesh(
       //     new THREE.BoxBufferGeometry(1, 1, 1),
