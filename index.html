@@ -6,7 +6,11 @@
   <link rel="stylesheet" type="text/css" href="base.css">
 </head>
 <body>
-  <script src="./main.js" type="module">
+  <script src="./main.js" type="module"></script>
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
   </script>
   <div class="container" id="container">
     <div class="ui">
@@ -19,6 +23,8 @@
     <div class="ui">
       <div class="game-over-layout" id="game-over">
         <div class="game-over-text">GAME OVER</div>
+        <br>
+        <button onclick="refreshPage()">New Game!</button>
       </div>      
     </div>
     <div class="ui">
