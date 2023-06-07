@@ -15,3 +15,7 @@ Improvement that needs to be made:
 - [ ] Improve home page/landing page
 - [ ] Adding user manual
 - [ ] Customize asset
+
+Resource Link:
+- https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D
+- https://quaternius.com/
