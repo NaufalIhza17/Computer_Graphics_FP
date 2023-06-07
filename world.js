@@ -29,8 +29,8 @@ export const world = (() => {
 
       const loader = new FBXLoader();
       loader.setPath('./resources/DesertPack/FBX/');
-      loader.load('Cactus3.fbx', (fbx) => {
-        fbx.scale.setScalar(0.01);
+      loader.load('car' + math.rand_int(1,7) + '.fbx', (fbx) => {
+        fbx.scale.setScalar(5);
 
         this.mesh = fbx;
         this.params_.scene.add(this.mesh);
@@ -99,20 +99,22 @@ export const world = (() => {
 
     SpawnObj_(scale, offset) {
       let obj = null;
-
+    
       if (this.unused_.length > 0) {
         obj = this.unused_.pop();
         obj.mesh.visible = true;
       } else {
         obj = new WorldObject(this.params_);
       }
-
-      obj.quaternion.setFromAxisAngle(
-          new THREE.Vector3(0, 1, 0), Math.random() * Math.PI * 2.0);
+    
+      obj.quaternion.setFromAxisAngle(new THREE.Vector3(1, 0, 0), -Math.PI / 2);
       obj.position.x = START_POS + offset;
+      obj.position.y = 0.0,1; // Adjust the height of the car above the ground
       obj.scale = scale * 0.01;
       this.objects_.push(obj);
     }
+    
+    
 
     SpawnCluster_() {
       const scaleIndex = math.rand_int(0, 1);

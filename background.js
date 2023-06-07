@@ -90,7 +90,7 @@ export const background = (() => {
           ['BigPalmTree.glb', 'PalmTree.png', 5],
           ['Skull.glb', 'Ground.png', 1],
           ['Scorpion.glb', 'Scorpion.png', 1],
-          ['Pyramid.glb', 'Ground.png', 40],
+          ['Pyramid.glb', 'Ground.png', 5],
           ['Monument.glb', 'Ground.png', 10],
           ['Cactus1.glb', 'Ground.png', 5],
           ['Cactus2.glb', 'Ground.png', 5],
