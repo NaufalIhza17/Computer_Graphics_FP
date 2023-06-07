@@ -16,6 +16,18 @@ Improvement that needs to be made:
 - [ ] Adding user manual
 - [ ] Customize asset
 
-Resource Link:
+Resources Link:
 - https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D
 - https://quaternius.com/
+
+Marking Scheme that needs to be reviewed:
+- [ ] 3D Modelling
+- (details)
+- [ ] Transformation/Camera
+- (details)
+- [ ] Lighting
+- (details)
+- [ ] Textures
+- (details)
+- [ ] Additional Features (realistic, functional, technical, etc)
+- (details)
