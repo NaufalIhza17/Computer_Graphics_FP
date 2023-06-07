@@ -10,8 +10,8 @@
 | Raden Roro Kayla Angelica Priambudi | 5025211262 |
 
 Improvement that needs to be made:
-[ ] Make a restart button
-[ ] Fix the background bug
-[ ] Improve home page/landing page
-[ ] Adding user manual
-[ ] Customize asset
+- [ ] Make a restart button
+- [ ] Fix the background bug
+- [ ] Improve home page/landing page
+- [ ] Adding user manual
+- [ ] Customize asset
