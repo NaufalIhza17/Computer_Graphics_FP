@@ -9,6 +9,7 @@ export const player = (() => {
     constructor(params) {
       this.position_ = new THREE.Vector3(0, 0, 0);
       this.velocity_ = 0.0;
+      this.score_ = 0;
 
       // this.mesh_ = new THREE.Mesh(
       //     new THREE.BoxBufferGeometry(1, 1, 1),
@@ -71,6 +72,8 @@ export const player = (() => {
     InitInput_() {
       this.keys_ = {
           spacebar: false,
+          up: false,
+          down: false,
       };
       this.oldKeys = {...this.keys_};
 
@@ -80,16 +83,22 @@ export const player = (() => {
 
     OnKeyDown_(event) {
       switch(event.keyCode) {
-        case 32:
+        case 32: // Spacebar
           this.keys_.space = true;
+          break;
+          case 38: // up arrow
+          this.keys_.up = true;
           break;
       }
     }
 
     OnKeyUp_(event) {
       switch(event.keyCode) {
-        case 32:
+        case 32: // Spacebar
           this.keys_.space = false;
+          break;
+          case 38: // up arrow
+          this.keys_.up = false;
           break;
       }
     }
@@ -110,7 +119,10 @@ export const player = (() => {
 
     Update(timeElapsed) {
       if (this.keys_.space && this.position_.y == 0.0) {
-        this.velocity_ = 30;
+        this.velocity_ = 26;
+      }
+      if (this.keys_.up && this.position_.y == 0.0) {
+        this.velocity_ = 26;
       }
 
       const acceleration = -75 * timeElapsed;
@@ -128,8 +140,7 @@ export const player = (() => {
         this.CheckCollisions_();
       }
     }
-  };
-
+  }
   return {
       Player: Player,
   };
