@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jumping Punk Game</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="gameOver.css">
+</head>
+<body>
+  <script src="./main.js" type="module"></script>
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+  </script>
+  <div class="container" id="container">
+    <div class="ui">
+      <div class="score-layout">
+        <div class="score-text" id="score-text">
+          00000
+        </div>
+      </div>
+    </div>
+    <div class="ui">
+      <div class="game-over-layout" id="game-over">
+        <div class="game-over-text">GAME OVER<br><span><a href="index.html">&lt;&lt;new game&gt;&gt;</a></span></div>
+      </div>      
+    </div>
+  </div>
+</body>
+</html>

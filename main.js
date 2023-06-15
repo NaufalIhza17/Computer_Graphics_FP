@@ -265,8 +265,8 @@ class BasicWorldDemo {
 
     if (this.player_.gameOver && !this.gameOver_) {
       this.gameOver_ = true;
-      document.getElementById('game-over').classList.toggle('active');
-      // window.location.href = 'http://www.google.com';
+      // document.getElementById('game-over').classList.toggle('active');
+      window.location.href = 'gameOver.html';
     }
   }
 }
