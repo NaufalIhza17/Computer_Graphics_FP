@@ -78,11 +78,14 @@ export const world = (() => {
     constructor(params) {
       this.objects_ = [];
       this.unused_ = [];
-      this.speed_ = 12;
+      this.speed_ = 12; // Kecepatan awal
       this.params_ = params;
       this.score_ = 0.0;
       this.scoreText_ = '00000';
       this.separationDistance_ = SEPARATION_DISTANCE;
+      this.speedIncreaseRate_ = 0.1; // Tingkat peningkatan kecepatan
+      this.speedIncreaseInterval_ = 5; // Interval waktu peningkatan kecepatan (dalam detik)
+      this.elapsedTime_ = 0; // Waktu yang telah berlalu
     }
 
     GetColliders() {
@@ -141,6 +144,7 @@ export const world = (() => {
       this.MaybeSpawn_();
       this.UpdateColliders_(timeElapsed);
       this.UpdateScore_(timeElapsed);
+      this.UpdateSpeed_(timeElapsed);
     }
 
     UpdateScore_(timeElapsed) {
@@ -175,6 +179,14 @@ export const world = (() => {
 
       this.objects_ = visible;
       this.unused_.push(...invisible);
+    }
+
+    UpdateSpeed_(timeElapsed) {
+      this.elapsedTime_ += timeElapsed;
+      if (this.elapsedTime_ >= this.speedIncreaseInterval_) {
+        this.speed_ += this.speedIncreaseRate_;
+        this.elapsedTime_ = 0;
+      }
     }
   };
 
