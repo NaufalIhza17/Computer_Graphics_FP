@@ -163,23 +163,27 @@ export const world = (() => {
     UpdateColliders_(timeElapsed) {
       const invisible = [];
       const visible = [];
-
+    
       for (let obj of this.objects_) {
         obj.position.x -= timeElapsed * this.speed_;
-
+    
         if (obj.position.x < -20) {
           invisible.push(obj);
           obj.mesh.visible = false;
         } else {
           visible.push(obj);
         }
-
-        obj.Update(timeElapsed);
       }
-
+    
       this.objects_ = visible;
       this.unused_.push(...invisible);
+    
+      // Perbarui collider setelah memperbarui posisi objek
+      for (let obj of visible) {
+        obj.Update(timeElapsed);
+      }
     }
+    
 
     UpdateSpeed_(timeElapsed) {
       this.elapsedTime_ += timeElapsed;
