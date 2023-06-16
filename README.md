@@ -14,7 +14,6 @@ Improvement that needs to be made:
 - [X] Improve home page/landing page
 - [X] Making the game faster as it goes on to make it more challenging
 - [ ] Customize asset (in progress)
-- [ ] Adding user manual
 - [ ] Store highscore
 - [ ] Fix the background bug
 
