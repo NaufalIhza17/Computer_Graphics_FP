@@ -83,8 +83,8 @@ export const world = (() => {
       this.score_ = 0.0;
       this.scoreText_ = '00000';
       this.separationDistance_ = SEPARATION_DISTANCE;
-      this.speedIncreaseRate_ = 0.1; // Tingkat peningkatan kecepatan
-      this.speedIncreaseInterval_ = 5; // Interval waktu peningkatan kecepatan (dalam detik)
+      this.speedIncreaseRate_ = 1; // Tingkat peningkatan kecepatan
+      this.speedIncreaseInterval_ = 2; // Interval waktu peningkatan kecepatan (dalam detik)
       this.elapsedTime_ = 0; // Waktu yang telah berlalu
     }
 
