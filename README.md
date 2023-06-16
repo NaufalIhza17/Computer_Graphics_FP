@@ -10,15 +10,14 @@
 | Raden Roro Kayla Angelica Priambudi | 5025211262 |
 
 Improvement that needs to be made:
-- [ ] Make a restart button
-- [ ] Fix the background bug
-- [ ] Improve home page/landing page
+- [X] Make a restart button
+- [X] Improve home page/landing page
+- [X] Making the game faster as it goes on to make it more challenging
+- [ ] Customize asset (in progress)
 - [ ] Adding user manual
-- [ ] Customize asset
+- [ ] Store highscore
+- [ ] Fix the background bug
 
-Resources Link:
-- https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D
-- https://quaternius.com/
 
 Marking Scheme that needs to be reviewed:
 - [ ] 3D Modelling
@@ -31,3 +30,7 @@ Marking Scheme that needs to be reviewed:
 - (details)
 - [ ] Additional Features (realistic, functional, technical, etc)
 - (details)
+
+Resources:
+- https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D
+- https://quaternius.com/
