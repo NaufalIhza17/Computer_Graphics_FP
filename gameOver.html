@@ -8,21 +8,32 @@
 <body>
   <script src="./main.js" type="module"></script>
   <script>
-    function refreshPage() {
-      location.reload();
-    }
+    // var score = localStorage.getItem('score');
+    // var scoreContainer = document.getElementById('score-container');
+    // scoreContainer.innerText = 'Score: ' + score;
+
+    window.addEventListener('scoreUpdated', function(event) {
+      var score = event.detail;
+
+      // Display the score in the HTML
+      var scoreContainer = document.getElementById('score-container');
+      scoreContainer.innerText = 'Score: ' + score;
+    });
   </script>
   <div class="container" id="container">
-    <div class="ui">
+    <!-- <div class="ui">
       <div class="score-layout">
         <div class="score-text" id="score-text">
           00000
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="ui">
       <div class="game-over-layout" id="game-over">
-        <div class="game-over-text">GAME OVER<br><span><a href="index.html">&lt;&lt;new game&gt;&gt;</a></span></div>
+        <div id="score-container"></div>
+        <div class="game-over-text">GAME OVER<br>
+          <span><a href="/">&lt;&lt;new game&gt;&gt;</a></span>
+        </div>
       </div>      
     </div>
   </div>

@@ -146,3 +146,9 @@ span {
   /* transform: translateY(1rem); */
   position:absolute;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  color: rgb(22 163 74);
+}
