@@ -160,10 +160,20 @@ span {
 }
 
 #space {
-  padding-right: 2.4rem;
+  padding-right: 5.4rem;
 }
 
 .tutorial img {
-  /* transform: translateY(1rem); */
   position:absolute;
+}
+
+#up {
+  right:6.7rem;
+  top:1.2rem;
+}
+
+#or {
+  color: black;
+  position:absolute;
+  right:8.7rem;
 }
