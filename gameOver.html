@@ -8,10 +8,7 @@
 <body>
   <script src="./main.js" type="module"></script>
   <script>
-    // var score = localStorage.getItem('score');
-    // var scoreContainer = document.getElementById('score-container');
-    // scoreContainer.innerText = 'Score: ' + score;
-
+    var score = localStorage.getItem('score');
     window.addEventListener('scoreUpdated', function(event) {
       var score = event.detail;
 
