@@ -8,13 +8,25 @@
 <body>
   <script src="./main.js" type="module"></script>
   <script>
-    const h2 = document.querySelector("h2");
-    h2.innerHTML = localStorage.getItem("score");
+    window.addEventListener('scoreUpdated', function(event) {
+      const score = event.detail;
+      const h2 = document.querySelector("#score-container");
+      h2.innerHTML = score;
+    });
+
+    // Retrieve the score from localStorage on page load
+    window.addEventListener('DOMContentLoaded', function() {
+      const score = localStorage.getItem('score');
+      const h2 = document.querySelector("#score-container");
+      h2.innerHTML = score;
+    });
   </script>
   <div class="container" id="container">
     <div class="ui">
       <div class="game-over-layout" id="game-over">
-        <h2 id="score-container"></h2>
+        <div class="score-text abs" id="score-text">
+          <h2 id="score-container">00000</h2>
+        </div>
         <div class="game-over-text">GAME OVER<br>
           <span><a href="/">&lt;&lt;new game&gt;&gt;</a></span>
         </div>

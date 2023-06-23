@@ -40,6 +40,11 @@ body {
   pointer-events: auto;
 }
 
+.game-over-layout .abs {
+  position: absolute;
+  top: 2rem;
+}
+
 .game-over-text {
   font-size: 5rem;
   color: white;
@@ -143,12 +148,15 @@ span {
 }
 
 .tutorial img {
-  /* transform: translateY(1rem); */
   position:absolute;
 }
 
 a {
   text-decoration: none;
-  color: black;
   color: rgb(22 163 74);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(16 90 44);
 }

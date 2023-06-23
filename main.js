@@ -15,7 +15,7 @@ void main() {
 }`;
 
 
-  const _FS = `
+const _FS = `
 uniform vec3 topColor;
 uniform vec3 bottomColor;
 uniform float offset;
