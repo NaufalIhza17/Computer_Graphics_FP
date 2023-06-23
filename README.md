@@ -33,3 +33,4 @@ Marking Scheme that needs to be reviewed:
 Resources:
 - https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D
 - https://quaternius.com/
+- https://developer.download.nvidia.com/whitepapers/2008/PCSS_Integration.pdf
